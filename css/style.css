@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --CARD-BGCOLOR: hsl(0, 0%, 100%);
+    --BODY-BGCOLOR: hsl(212, 45%, 89%);
+    --HEADER-COLOR: #000;
+    --FONT-COLOR: hsl(216, 15%, 48%);
+}
+
+body {
+    background-color: var(--BODY-BGCOLOR);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh -1px;
+    padding: 2em;
+}
+
+.card {
+    background-color: var(--CARD-BGCOLOR);
+    border-radius: 15px;
+    padding: 1.5em;
+    box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    margin: 10em 0 2em;
+}
+
+.image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+h1 {
+    font-size: 1.4rem;
+    color: var(--HEADER-COLOR);
+    font-weight: bold;
+    margin-bottom: 1em;  
+    padding: 0 0.8em;
+}
+
+p {
+    font-size: 1em;
+    color: var(--FONT-COLOR);
+    padding: 0 1.5em;
+    margin-bottom: 2em;  
+}
+
+footer {
+    font-size: 0.85rem;
+    color: #7b879d;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 1em;  
+        margin: 5em 0 1em;
+    }
+
+    .image {
+        margin-bottom: 1em;
+    }
+
+    h1 {
+        font-size: 1em;
+        padding: 0;
+    }
+
+    p {
+        font-size: 0.7rem;
+        
+    }
+
+    footer {
+        font-size: 0.5em;
+    }
+}
+    
